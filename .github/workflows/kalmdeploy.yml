@@ -17,7 +17,7 @@ jobs:
           KALM_API_ADDRESS: ${{ secrets.KALM_API_ADDRESS }}
           KALM_DEPLOY_KEY: ${{ secrets.KALM_DEPLOY_KEY }}
           KALM_APP: kalmrocks
-          KALM_COMPONENT: docusaurus
+          KALM_COMPONENT: docusaurus-kalm
           KALM_COMPONENT_IMG_TAG: latest
       - name: output of step deploy
         run: echo 'The callback response was ${{ steps.deploy.outputs.resp }}.'
